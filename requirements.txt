@@ -1,0 +1,6 @@
+# Host Training & Conversion Dependencies for WealthSense-Android
+tensorflow>=2.15.0
+numpy>=1.24.3
+scikit-learn>=1.3.0
+pandas>=2.1.1
+tflite-runtime>=2.14.0
