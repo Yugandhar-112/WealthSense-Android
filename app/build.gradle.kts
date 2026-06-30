@@ -32,8 +32,8 @@ android {
     buildFeatures {
         viewBinding = true
     }
-    aaptOptions {
-        noCompress("tflite")
+    androidResources {
+        noCompress.add("tflite")
     }
 }
 
@@ -45,12 +45,12 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
-    // Database Architecture Components
+    // Database Layer (Room)
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
     kapt("androidx.room:room-compiler:$roomVersion")
 
-    // Real-time Inference Engine Dependencies
+    // Local Machine Learning Execution (TensorFlow Lite)
     implementation("org.tensorflow:tensorflow-lite:2.14.0")
     implementation("org.tensorflow:tensorflow-lite-support:0.4.4")
 }
