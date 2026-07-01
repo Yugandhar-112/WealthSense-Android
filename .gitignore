@@ -14,6 +14,14 @@ local.properties
 # Gradle
 .gradle/
 
+# Python Environment Isolation Layer
+ml_training/venv/
+ml_training/.venv/
+.venv/
+venv/
+*.pyc
+__pycache__/
+
 # OS files
 .DS_Store
 Thumbs.db
